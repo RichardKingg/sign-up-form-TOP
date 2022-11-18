@@ -9,39 +9,44 @@
   </head>
   <body>
     <div class="backgroundDiv">
-      <img src="" alt="" />
+      <img src="./blue-background.jpg" alt="a very blue background" />
     </div>
 
     <div class="formDiv">
       <header>
-        <h1></h1>
-        <p></p>
+        <h1>
+          This is not a real online service! Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Tellus id interdum velit laoreet id
+          donec ultrices.
+        </h1>
       </header>
 
       <form action="" method="post">
         <fieldset>
+          <legend>Create your account here</legend>
           <div class="formCol1">
-            <label for=""></label>
-            <input type="text" />
-            <label for=""></label>
-            <input type="text" />
-            <label for=""></label>
-            <input type="text" />
+            <label for="username">First Name</label>
+            <input type="text" name="user-name" id="username" />
+            <label for="useremail">Email</label>
+            <input type="email" name="user-email" id="useremail" />
+            <label for="pwd">Password</label>
+            <input type="password" name="user-password" id="pass" />
           </div>
           <div class="formCol2">
-            <label for=""></label>
-            <input type="text" />
-            <label for=""></label>
-            <input type="text" />
-            <label for=""></label>
-            <input type="text" />
+            <label for="userlast">Last Name</label>
+            <input type="text" name="user-last-name" id="userlast" />
+            <label for="userphone">Phone Number</label>
+            <input type="tel" name="user-phone" id="userphone" />
+            <label for="confirmPass">Confirm Password</label>
+            <input type="password" name="confirm-password" id="confirmPass" />
           </div>
         </fieldset>
       </form>
 
       <footer>
-        <button type="submit"></button>
-        <p></p>
+        <button type="submit">Create Account</button>
+        <p>Already have an account? <a href="" target="_blank">Login</a></p>
       </footer>
     </div>
   </body>
