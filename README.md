@@ -13,3 +13,5 @@ Pseudocode:
 4. Add a button and paragraph to footer.
 
 5. Background image on the background div.
+
+image credits: https://www.needpix.com/photo/1012427/blue-background-abstract-blue-background-art-artwork-backdrop-color-computer

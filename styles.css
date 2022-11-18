@@ -1,6 +1,14 @@
+:root {
+  --gray: #e1e1e1;
+  --purple: #79008e;
+  --blue: #07008d;
+  --white: #efefef;
+}
+
 * {
   margin: 0;
   padding: 0;
+  font-family: Helvetica, Arial;
 }
 
 body {
@@ -11,27 +19,37 @@ body {
 }
 
 .backgroundDiv {
-  margin-right: 40px;
-}
-
-img {
-  width: 475px;
+  background-image: url(./blue-background.jpg);
+  width: 40vw;
+  background-size: auto;
+  background-position: center;
   height: 100vh;
 }
 
 .formDiv {
+  width: 60vw;
+  height: auto;
   display: flex;
   flex-direction: column;
-  margin-right: 20px;
 }
 
 header {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: var(--gray);
+  box-shadow: 0 0 8px 0 var(--blue);
+}
+
+h1 {
+  font-size: 24px;
 }
 
 form {
-  margin-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  padding-left: 20px;
 }
 
 fieldset {
@@ -54,9 +72,14 @@ legend {
 }
 
 footer {
+  padding-top: 20px;
+  padding-left: 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  height: 100%;
+  background-color: var(--gray);
+  box-shadow: 0 0 8px 0 var(--purple);
 }
 
 button {
