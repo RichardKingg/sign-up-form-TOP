@@ -11,7 +11,7 @@ body {
 }
 
 .backgroundDiv {
-  margin-right: 30px;
+  margin-right: 40px;
 }
 
 img {
@@ -51,4 +51,15 @@ legend {
   display: flex;
   flex-direction: column;
   gap: 5px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+button {
+  width: 125px;
+  padding: 10px;
 }
