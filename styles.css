@@ -29,3 +29,26 @@ header {
   margin-top: 50px;
   margin-bottom: 50px;
 }
+
+form {
+  margin-bottom: 50px;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 100px;
+}
+
+legend {
+  margin-bottom: 20px;
+}
+
+.formCol1,
+.formCol2 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
