@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+}
+
+.backgroundDiv {
+  margin-right: 30px;
+}
+
+img {
+  width: 475px;
+  height: 100vh;
+}
+
+.formDiv {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+header {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
