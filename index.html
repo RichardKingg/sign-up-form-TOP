@@ -25,48 +25,79 @@
           <legend>Create your account here</legend>
           <div class="formCol1">
             <label for="username">First Name</label>
-            <input
-              type="text"
-              name="user-name"
-              id="username"
-              placeholder="John"
-              required
-            />
+            <div class="inputDiv">
+              <input
+                type="text"
+                name="user-name"
+                id="username"
+                placeholder="John"
+                minlength="3"
+                required
+              />
+              <span></span>
+            </div>
             <label for="useremail">Email</label>
-            <input
-              type="email"
-              name="user-email"
-              id="useremail"
-              placeholder="john@example.com"
-              required
-            />
+            <div class="inputDiv">
+              <input
+                type="email"
+                name="user-email"
+                id="useremail"
+                placeholder="john@example.com"
+                required
+              />
+              <span></span>
+            </div>
             <label for="pwd">Password</label>
-            <input type="password" name="user-password" id="pass" required />
+            <div class="inputDiv">
+              <input
+                type="password"
+                name="user-password"
+                id="pass"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                required
+              />
+              <span></span>
+            </div>
+            <span class="pwdPattern"
+              >Must contain at least one number and one uppercase and lowercase
+              letter, and at least 8 or more characters</span
+            >
           </div>
           <div class="formCol2">
             <label for="userlast">Last Name</label>
-            <input
-              type="text"
-              name="user-last-name"
-              id="userlast"
-              placeholder="Doe"
-              required
-            />
+            <div class="inputDiv">
+              <input
+                type="text"
+                name="user-last-name"
+                id="userlast"
+                placeholder="Doe"
+                required
+              />
+              <span></span>
+            </div>
             <label for="userphone">Phone Number</label>
-            <input
-              type="tel"
-              name="user-phone"
-              id="userphone"
-              placeholder="Enter your 10 digit number"
-              required
-            />
+            <div class="inputDiv">
+              <input
+                type="tel"
+                name="user-phone"
+                id="userphone"
+                minlength="10"
+                maxlength="10"
+                placeholder="Enter your 10 digit number"
+                required
+              />
+              <span></span>
+            </div>
             <label for="confirmPass">Confirm Password</label>
-            <input
-              type="password"
-              name="confirm-password"
-              id="confirmPass"
-              required
-            />
+            <div class="inputDiv">
+              <input
+                type="password"
+                name="confirm-password"
+                id="confirmPass"
+                required
+              />
+              <span></span>
+            </div>
           </div>
         </fieldset>
       </form>
