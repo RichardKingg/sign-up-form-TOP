@@ -1,6 +1,7 @@
 let passField = document.getElementById("pass");
 let passConfField = document.getElementById("confirmPass");
 let confP = document.getElementById("confP");
+let button = document.querySelector("button");
 
 let passStr = "";
 let passConfStr = "";
@@ -54,6 +55,7 @@ if (passConfStr === "" || passStr !== passConfStr) {
   confP.textContent = "✖";
   confP.style.color = "#79008e";
   passConfField.style.borderColor = "#79008e";
+  button.disabled = true;
 }
 
 //Re evaluates everytime you finish typing and styles border and span
@@ -62,9 +64,11 @@ passConfField.addEventListener("keyup", () => {
     confP.textContent = "✖";
     confP.style.color = "#79008e";
     passConfField.style.borderColor = "#79008e";
+    button.disabled = true;
   } else if (passStr === passConfStr) {
     confP.textContent = "✓";
     confP.style.color = "#07008d";
     passConfField.style.borderColor = "#07008d";
+    button.disabled = false;
   }
 });
