@@ -1,6 +1,7 @@
 :root {
   --gray: #e1e1e1;
   --purple: #79008e;
+  --dark-purple: #550064;
   --blue: #07008d;
   --white: #fdfdfd;
   --black: #000000;
@@ -127,4 +128,18 @@ footer {
 button {
   width: 125px;
   padding: 10px;
+  border-radius: 10px;
+  border-style: none;
+  color: var(--white);
+  background-color: var(--purple);
+}
+
+button:disabled {
+  color: var(--gray);
+  background-color: var(--white);
+}
+
+button:enabled:hover {
+  background-color: var(--dark-purple);
+  cursor: pointer;
 }
