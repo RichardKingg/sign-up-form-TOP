@@ -58,7 +58,7 @@ if (passConfStr === "" || passStr !== passConfStr) {
   button.disabled = true;
 }
 
-//Re evaluates everytime you finish typing and styles border and span
+//Re evaluates everytime you finish typing at confirm password input and styles its border and span
 passConfField.addEventListener("keyup", () => {
   if (passConfStr === "" || passStr !== passConfStr) {
     confP.textContent = "✖";
@@ -70,5 +70,15 @@ passConfField.addEventListener("keyup", () => {
     confP.style.color = "#07008d";
     passConfField.style.borderColor = "#07008d";
     button.disabled = false;
+  }
+});
+
+//Checks to see if password input and confirm password input still are the same after using BACKSPACE
+passField.addEventListener("keyup", () => {
+  if (passStr !== passConfStr) {
+    confP.textContent = "✖";
+    confP.style.color = "#79008e";
+    passConfField.style.borderColor = "#79008e";
+    button.disabled = true;
   }
 });
