@@ -80,5 +80,10 @@ passField.addEventListener("keyup", () => {
     confP.style.color = "#79008e";
     passConfField.style.borderColor = "#79008e";
     button.disabled = true;
+  } else if (passStr === passConfStr) {
+    confP.textContent = "✓";
+    confP.style.color = "#07008d";
+    passConfField.style.borderColor = "#07008d";
+    button.disabled = false;
   }
 });
