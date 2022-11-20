@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
+    <script src="script.js" defer></script>
     <title>Sign up form</title>
   </head>
   <body>
@@ -27,6 +28,7 @@
             <label for="username">First Name</label>
             <div class="inputDiv">
               <input
+                class="genInp"
                 type="text"
                 name="user-name"
                 id="username"
@@ -34,29 +36,31 @@
                 minlength="3"
                 required
               />
-              <span></span>
+              <span class="genValidation"></span>
             </div>
             <label for="useremail">Email</label>
             <div class="inputDiv">
               <input
+                class="genInp"
                 type="email"
                 name="user-email"
                 id="useremail"
                 placeholder="john@example.com"
                 required
               />
-              <span></span>
+              <span class="genValidation"></span>
             </div>
-            <label for="pwd">Password</label>
+            <label for="pass">Password</label>
             <div class="inputDiv">
               <input
+                class="genInp"
                 type="password"
                 name="user-password"
                 id="pass"
                 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                 required
               />
-              <span></span>
+              <span class="genValidation"></span>
             </div>
             <span class="pwdPattern"
               >Must contain at least one number and one uppercase and lowercase
@@ -67,17 +71,19 @@
             <label for="userlast">Last Name</label>
             <div class="inputDiv">
               <input
+                class="genInp"
                 type="text"
                 name="user-last-name"
                 id="userlast"
                 placeholder="Doe"
                 required
               />
-              <span></span>
+              <span class="genValidation"></span>
             </div>
             <label for="userphone">Phone Number</label>
             <div class="inputDiv">
               <input
+                class="genInp"
                 type="tel"
                 name="user-phone"
                 id="userphone"
@@ -86,7 +92,7 @@
                 placeholder="Enter your 10 digit number"
                 required
               />
-              <span></span>
+              <span class="genValidation"></span>
             </div>
             <label for="confirmPass">Confirm Password</label>
             <div class="inputDiv">
@@ -96,7 +102,7 @@
                 id="confirmPass"
                 required
               />
-              <span></span>
+              <span id="confP"></span>
             </div>
           </div>
         </fieldset>

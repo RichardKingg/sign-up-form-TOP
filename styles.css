@@ -84,24 +84,24 @@ input {
   background-color: var(--gray);
 }
 
-input:focus {
+.genInp:focus {
   border-color: var(--black);
 }
 
-input:valid + span::after {
+.genInp:valid + .genValidation::after {
   content: "✓";
   color: var(--blue);
 }
 
-input:valid {
+.genInp:valid {
   border-color: var(--blue);
 }
 
-input:invalid {
+.genInp:invalid {
   border-color: var(--purple);
 }
 
-input:invalid + span::after {
+.genInp:invalid + .genValidation::after {
   content: "✖";
   color: var(--purple);
 }
