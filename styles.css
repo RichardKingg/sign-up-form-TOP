@@ -6,6 +6,7 @@
   --black: #000000;
 }
 
+/* General styling */
 * {
   margin: 0;
   padding: 0;
@@ -84,6 +85,7 @@ input {
   background-color: var(--gray);
 }
 
+/* Styling for input validation */
 .genInp:focus {
   border-color: var(--black);
 }
@@ -110,6 +112,7 @@ input {
   font-size: 10px;
 }
 
+/* Footer section */
 footer {
   padding-top: 20px;
   padding-left: 20px;
