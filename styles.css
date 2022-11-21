@@ -171,3 +171,28 @@ button:enabled:hover {
   background-color: var(--dark-purple);
   cursor: pointer;
 }
+
+@media only screen and (max-width: 600px) {
+  .backgroundDiv {
+    height: 146vh;
+  }
+  #banner {
+    font-size: 24px;
+  }
+  #logo {
+    max-width: 30px;
+    height: auto;
+  }
+  .formDiv {
+    max-height: 630px;
+  }
+  h1 {
+    font-size: 16px;
+  }
+  fieldset {
+    flex-direction: column;
+  }
+  footer > p {
+    margin-bottom: 10px;
+  }
+}
