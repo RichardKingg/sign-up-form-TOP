@@ -7,6 +7,14 @@
   --black: #000000;
 }
 
+@font-face {
+  font-family: "poppinsbold_italic";
+  src: url("./font/poppins-bolditalic-webfont.woff2") format("woff2"),
+    url("./font/poppins-bolditalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* General styling */
 * {
   margin: 0;
@@ -22,11 +30,31 @@ body {
 }
 
 .backgroundDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: url(./blue-background.jpg);
   width: 40vw;
   background-size: auto;
   background-position: center;
   height: 100vh;
+}
+
+#banner {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  justify-content: center;
+  font-family: "poppinsbold_italic";
+  font-size: 50px;
+  color: var(--white);
+  background-color: rgb(0, 0, 0, 0.7);
+  flex: 1 0 auto;
+}
+
+#logo {
+  width: 50px;
+  height: auto;
 }
 
 .formDiv {
